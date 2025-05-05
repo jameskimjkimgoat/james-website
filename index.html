@@ -1,17 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>James Kim Novel Project</title>
   <style>
     body {
-      font-family: sans-serif;
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f4f4f4;
+      color: #111;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 2rem;
       text-align: center;
-      padding-top: 50px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid white;
+    }
+
+    main {
+      padding: 3rem;
+      text-align: center;
+    }
+
+    .hero {
+      font-size: 2rem;
+      color: #333;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my first website hosted on GitHub Pages.</p>
+  <header>
+    <h1>James Kim Novel Project</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#chapter1">Chapter 1</a>
+    <a href="#chapter2">Chapter 2</a>
+    <a href="#chapter3">Chapter 3</a>
+    <a href="#more">More</a>
+  </nav>
+
+  <main>
+    <p class="hero">Welcome to the official website of James Kim's Novel Project. Explore the chapters and follow the story unfold.</p>
+  </main>
 </body>
 </html>
