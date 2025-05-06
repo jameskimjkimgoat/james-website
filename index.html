@@ -4,61 +4,117 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Searching for the Loophole</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-image: url('https://img.freepik.com/free-vector/abstract-circular-geometric-background-starburst-dynamic-centric-motion-pattern_1142-13773.jpg');
-      background-size: cover;
-      background-position: center;
-      color: white;
+      font-family: 'Oswald', sans-serif;
+      color: #fff;
+      background-color: #111;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('98eeee98-c776-4ac8-96d1-300c184d0800.png') center center / cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
       text-align: center;
     }
-    header {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 20px;
+
+    .hero h1 {
+      font-size: 4rem;
+      background: linear-gradient(to right, #ffffff, #999999);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 2px 2px 20px rgba(0,0,0,0.8);
     }
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
+
+    .content {
+      background-color: #1a1a1a;
+      padding: 3rem 2rem;
+      text-align: center;
     }
-    nav a:hover {
-      text-decoration: underline;
+
+    .posters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
     }
-    main {
-      padding: 100px 20px;
+
+    .poster {
+      background-color: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 200px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     }
-    h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+
+    .poster:hover {
+      transform: scale(1.05);
     }
-    footer {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 10px;
-      position: fixed;
+
+    .poster img {
       width: 100%;
-      bottom: 0;
+      display: block;
+    }
+
+    .poster p {
+      padding: 1rem;
+      font-size: 1rem;
+      background-color: #111;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .poster {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .poster {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="chapter1.html">Chapter 1</a>
-      <a href="chapter2.html">Chapter 2</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
-  <main>
+
+  <section class="hero">
     <h1>Searching for the Loophole</h1>
-    <p>Welcome to the official site of James Kim's novel project.</p>
-  </main>
-  <footer>
-    <p>&copy; 2025 James Kim. All rights reserved.</p>
-  </footer>
+  </section>
+
+  <section class="content">
+    <h2>Featured Works</h2>
+    <div class="posters">
+      <div class="poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rye_catcher.jpg" alt="Catcher in the Rye">
+        <p>The Catcher in the Rye<br><em>(1951)</em></p>
+      </div>
+      <div class="poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg" alt="Fight Club">
+        <p>Fight Club<br><em>(1996)</em></p>
+      </div>
+      <div class="poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/BeingThere.jpg" alt="Being There">
+        <p>Being There<br><em>(1970)</em></p>
+      </div>
+      <div class="poster">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/American_Psycho.png" alt="American Psycho">
+        <p>American Psycho<br><em>(2000)</em></p>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
 
