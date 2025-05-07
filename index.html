@@ -4,37 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Searching for the Loophole</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Oswald', sans-serif;
-      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #111;
+      color: white;
     }
 
-    .hero {
-      height: 100vh;
-      background: url('98eeee98-c776-4ac8-96d1-300c184d0800.png') center center / cover no-repeat;
+    header {
+      background-image: url('background.png');
+      background-size: cover;
+      background-position: center;
+      height: 50vh;
       display: flex;
-      justify-content: center;
       align-items: center;
-      position: relative;
+      justify-content: center;
       text-align: center;
+      color: white;
     }
 
-    .hero h1 {
+    header h1 {
       font-size: 4rem;
-      background: linear-gradient(to right, #ffffff, #999999);
-      -webkit-background-clip: text;
-      color: transparent;
-      text-shadow: 2px 2px 20px rgba(0,0,0,0.8);
-    }
-
-    .content {
-      background-color: #1a1a1a;
-      padding: 3rem 2rem;
-      text-align: center;
+      text-shadow: 3px 3px 10px black;
+      letter-spacing: 2px;
     }
 
     .posters {
@@ -42,79 +35,80 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
-      margin-top: 2rem;
+      padding: 2rem;
+      background-color: #000;
     }
 
     .poster {
-      background-color: #222;
-      border-radius: 8px;
-      overflow: hidden;
-      width: 200px;
-      transition: transform 0.3s ease;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    }
-
-    .poster:hover {
-      transform: scale(1.05);
+      max-width: 200px;
+      text-align: center;
     }
 
     .poster img {
       width: 100%;
-      display: block;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     }
 
     .poster p {
-      padding: 1rem;
-      font-size: 1rem;
-      background-color: #111;
-      margin: 0;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #ccc;
     }
 
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.5rem;
-      }
-
-      .poster {
-        width: 45%;
-      }
+    section.chapter-one {
+      background-color: #1a1a1a;
+      padding: 3rem 2rem;
+      text-align: center;
     }
 
-    @media (max-width: 500px) {
-      .poster {
-        width: 100%;
-      }
+    section.chapter-one h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    section.chapter-one p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #ddd;
     }
   </style>
 </head>
 <body>
 
-  <section class="hero">
+  <header>
     <h1>Searching for the Loophole</h1>
-  </section>
+  </header>
 
-  <section class="content">
-    <h2>Featured Works</h2>
-    <div class="posters">
-      <div class="poster">
-        <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rye_catcher.jpg" alt="Catcher in the Rye">
-        <p>The Catcher in the Rye<br><em>(1951)</em></p>
-      </div>
-      <div class="poster">
-        <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg" alt="Fight Club">
-        <p>Fight Club<br><em>(1996)</em></p>
-      </div>
-      <div class="poster">
-        <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/BeingThere.jpg" alt="Being There">
-        <p>Being There<br><em>(1970)</em></p>
-      </div>
-      <div class="poster">
-        <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/American_Psycho.png" alt="American Psycho">
-        <p>American Psycho<br><em>(2000)</em></p>
-      </div>
+  <div class="posters">
+    <div class="poster">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81OthjkJBuL.jpg" alt="Catcher in the Rye">
+      <p><strong>The Catcher in the Rye</strong><br>1951</p>
     </div>
+    <div class="poster">
+      <img src="https://m.media-amazon.com/images/I/81wt1VPv4oL._AC_UF1000,1000_QL80_.jpg" alt="Fight Club">
+      <p><strong>Fight Club</strong><br>1996</p>
+    </div>
+    <div class="poster">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71w5FzYQ7RL.jpg" alt="Being There">
+      <p><strong>Being There</strong><br>1970</p>
+    </div>
+    <div class="poster">
+      <img src="https://m.media-amazon.com/images/I/41aQPTCmeVL._AC_SY780_.jpg" alt="American Psycho">
+      <p><strong>American Psycho</strong><br>1991</p>
+    </div>
+  </div>
+
+  <section class="chapter-one">
+    <h2>Chapter One</h2>
+    <p>
+      "Nothing else exists for her now beyond this moment. The engine's cut. Ready! Set! Go! She dives through the door. Like a body surfer." This is a quote from the article <em>"An Exploration of High Risk Leisure Consumption Through Skydiving"</em>. What if there were novels with protagonists who live every moment of their lives like skydivers who momentarily engage in high-risk leisure activities? Well, two of the most influential writers of this topic are Jerzy Kozinski and J.D. Salinger. Kozinski's <em>Being There</em> and Salinger's <em>The Catcher in the Rye</em> both explore individuals who live life like a reckless game, and go wherever their heart takes them. While <em>Being There</em> focuses on the internal turmoil that happens to the protagonist as he figures out the world with the brain age of a child, <em>The Catcher in the Rye</em> focuses both on the physical and internal journey of Holden Caulfield as he thugs out the whole situation after getting expelled.
+    </p>
   </section>
 
 </body>
 </html>
+
 
