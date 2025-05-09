@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Searching for the Loophole</title>
   <style>
     body {
@@ -12,30 +12,8 @@
       color: white;
     }
 
-    nav {
-      background-color: #000;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.2s;
-    }
-
-    nav a:hover {
-      color: #ccc;
-    }
-
     header {
-      background-image: url('background.png');
+      background-image: url('./background.png'); /* Ensure the path is correct relative to your repository */
       background-size: cover;
       background-position: center;
       height: 50vh;
@@ -77,77 +55,56 @@
       color: #ccc;
     }
 
-    section {
+    section.chapter-one {
       background-color: #1a1a1a;
       padding: 3rem 2rem;
       text-align: center;
     }
 
-    section h2 {
+    section.chapter-one h2 {
       font-size: 2rem;
       margin-bottom: 1.5rem;
     }
 
-    section p {
-      max-width: 900px;
+    section.chapter-one p {
+      max-width: 800px;
       margin: 0 auto;
       font-size: 1.1rem;
       line-height: 1.7;
       color: #ddd;
-      text-align: left;
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#chapter1">Chapter 1</a>
-    <a href="#chapter2">Chapter 2</a>
-    <a href="#beyond">Beyond</a>
-  </nav>
-
-  <header id="home">
+  <header>
     <h1>Searching for the Loophole</h1>
   </header>
 
   <div class="posters">
     <div class="poster">
-      <img src="https://m.media-amazon.com/images/I/81OthjkJBuL._SL1500_.jpg" alt="The Catcher in the Rye">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Rye_catcher.jpg" alt="The Catcher in the Rye">
       <p><strong>The Catcher in the Rye</strong><br>1951</p>
     </div>
     <div class="poster">
-      <img src="https://m.media-amazon.com/images/I/71v3G4eu6wL._AC_UF894,1000_QL80_.jpg" alt="Fight Club">
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg" alt="Fight Club">
       <p><strong>Fight Club</strong><br>1996</p>
     </div>
     <div class="poster">
-      <img src="https://m.media-amazon.com/images/I/81OIgZ3lPEL._SL1500_.jpg" alt="Being There">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/e4/Being_There.jpg" alt="Being There">
       <p><strong>Being There</strong><br>1970</p>
     </div>
     <div class="poster">
-      <img src="https://m.media-amazon.com/images/I/81z5nFtEo4L._AC_UF1000,1000_QL80_.jpg" alt="American Psycho">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/62/American_Psycho.png" alt="American Psycho">
       <p><strong>American Psycho</strong><br>1991</p>
     </div>
   </div>
 
-  <section id="chapter1">
-  <h2>Chapter 1</h2>
-
-  <p><strong>Creative Title:</strong> Is an Academic title really necessary to discuss fictional characters in contemporary American literature?</p>
-
-  <p>"Nothing else exists for her now beyond this moment, and for her he is nothing more than an arrangement of shapes and colors."</p>
-
-  <p>Holden Caulfield, Tyler Durden, Chance the Gardener, Patrick Bateman — four American protagonists, four characters desperately searching for something to grasp in a world that doesn’t make sense.</p>
-
-  <p>Their paths diverge, but they’re all looking for a loophole — an escape from society’s fakeness or failure, a way to exist in their own truth.</p>
-
-  <!-- Add more <p>...</p> for each paragraph -->
-</section>
-
-
-  <section id="beyond">
-    <h2>Beyond</h2>
-    <p>Stay tuned for more reflections and analysis.</p>
+  <section class="chapter-one">
+    <h2>Chapter One</h2>
+    <p>
+      "Nothing else exists for her now beyond this moment. The engine's cut. Ready! Set! Go! She dives through the door. Like a body surfer." This is a quote from the article <em>"An Exploration of High Risk Leisure Consumption Through Skydiving"</em>. What if there were novels with protagonists who live every moment of their lives like skydivers who momentarily engage in high-risk leisure activities? Well, two of the most influential writers of this topic are Jerzy Kozinski and J.D. Salinger. Kozinski's <em>Being There</em> and Salinger's <em>The Catcher in the Rye</em> both explore individuals who live life like a reckless game, and go wherever their heart takes them. While <em>Being There</em> focuses on the internal turmoil that happens to the protagonist as he figures out the world with the brain age of a child, <em>The Catcher in the Rye</em> focuses both on the physical and internal journey of Holden Caulfield as he thugs out the whole situation after getting expelled.
+    </p>
   </section>
 
 </body>
