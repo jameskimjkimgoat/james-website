@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Searching for the Loophole</title>
   <style>
+    /* General Styling */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -54,29 +55,46 @@
       letter-spacing: 2px;
     }
 
-    .posters {
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #f4c542;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .media-group {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
-      padding: 2rem;
-      background-color: #000;
+      margin-top: 2rem;
     }
 
-    .poster {
-      max-width: 200px;
+    .media-item {
+      max-width: 250px;
       text-align: center;
     }
 
-    .poster img {
+    .media-item img {
       width: 100%;
       border-radius: 8px;
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .poster p {
+    .media-item img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+    }
+
+    .media-item p {
       margin-top: 0.5rem;
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: #ccc;
     }
   </style>
@@ -94,24 +112,45 @@
     <h1>Searching for the Loophole</h1>
   </header>
 
-  <div class="posters">
-    <div class="poster">
-      <img src="https://i.ebayimg.com/images/g/D0UAAOSwBV5ab4-V/s-l1200.jpg" alt="The Catcher in the Rye">
-      <p><strong>The Catcher in the Rye</strong><br>1951</p>
+  <section>
+    <h2>Chapter 1: Being There & The Catcher in the Rye</h2>
+    <div class="media-group">
+      <div class="media-item">
+        <img src="https://m.media-amazon.com/images/I/51bJ239qRWL.jpg" alt="Being There">
+        <p><strong>Being There</strong><br>1970</p>
+        <p>
+          Jerzy Kozinski's <em>Being There</em> explores the childlike innocence of Chance, a protagonist whose pure and unjaded perspective allows him to navigate complex social systems with remarkable simplicity.
+        </p>
+      </div>
+      <div class="media-item">
+        <img src="https://i.ebayimg.com/images/g/D0UAAOSwBV5ab4-V/s-l1200.jpg" alt="The Catcher in the Rye">
+        <p><strong>The Catcher in the Rye</strong><br>1951</p>
+        <p>
+          J.D. Salinger's <em>The Catcher in the Rye</em> dives deep into the reckless journey of Holden Caulfield, a troubled youth navigating the complexities of adulthood and societal expectations.
+        </p>
+      </div>
     </div>
-    <div class="poster">
-      <img src="https://www.originalfilmart.com/cdn/shop/files/fight_club_1999_advance_style_A_original_film_art_59c1802c-86a0-4be8-8894-d6fd9e0dde93_5000x.webp?v=1703028197" alt="Fight Club">
-      <p><strong>Fight Club</strong><br>1996</p>
+  </section>
+
+  <section>
+    <h2>Chapter 2: Fight Club & American Psycho</h2>
+    <div class="media-group">
+      <div class="media-item">
+        <img src="https://www.originalfilmart.com/cdn/shop/files/fight_club_1999_advance_style_A_original_film_art_59c1802c-86a0-4be8-8894-d6fd9e0dde93_5000x.webp?v=1703028197" alt="Fight Club">
+        <p><strong>Fight Club</strong><br>1996</p>
+        <p>
+          Chuck Palahniuk's <em>Fight Club</em> critiques materialism and explores the narrator’s dual personality, unraveling the societal pressures that lead to his fractured identity.
+        </p>
+      </div>
+      <div class="media-item">
+        <img src="https://i.ebayimg.com/00/s/MTYwMFgxMDY2/z/~DQAAOSwqqJjQs3H/$_57.JPG?set_id=880000500F" alt="American Psycho">
+        <p><strong>American Psycho</strong><br>2000</p>
+        <p>
+          Mary Harron's <em>American Psycho</em> delves into the psychopathic duality of Patrick Bateman, a businessman who struggles to separate reality from his twisted fantasies.
+        </p>
+      </div>
     </div>
-    <div class="poster">
-      <img src="https://m.media-amazon.com/images/I/51bJ239qRWL.jpg" alt="Being There">
-      <p><strong>Being There</strong><br>1970</p>
-    </div>
-    <div class="poster">
-      <img src="https://i.ebayimg.com/00/s/MTYwMFgxMDY2/z/~DQAAOSwqqJjQs3H/$_57.JPG?set_id=880000500F" alt="American Psycho">
-      <p><strong>American Psycho</strong><br>1991</p>
-    </div>
-  </div>
+  </section>
 
 </body>
 </html>
